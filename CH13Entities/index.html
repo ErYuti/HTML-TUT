@@ -1,0 +1,47 @@
+<!-- Some characters are reserved in HTML.
+If you use the less than (<) or greater than (>) signs in your HTML text, the browser might mix them with tags.
+Entity names or entity numbers can be used to display reserved HTML characters. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Entities</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div>
+    <!-- if you want to use additional space than entities used -->
+    <!-- Entity names look like this:
+    &entity_name;
+    Entity numbers look like this:
+    &#entity_number; -->
+    <p>This a one paragragh</p>
+    <!-- non-breaking space	&nbsp;	&#160; -->
+    <p>This a one &nbsp; paragragh</p>
+    <!-- <	less than	&lt;	&#60;	 -->
+    <p>This a one &lt; paragragh</p>
+    <!-- >	greater than	&gt;	&#62;	 -->
+    <p>This a one &gt; paragragh</p>
+    <!-- &	ampersand	&amp;	&#38;	 -->
+    <p>This a one &amp; paragragh</p>
+    <!-- "	double quotation mark	&quot;	&#34;	 -->
+    <p>This a one &quot; paragragh</p>
+    <!-- '	single quotation mark	&apos;	&#39;	 -->
+    <p>This a one &apos; paragragh</p>
+    <!-- ¢	cent	&cent;	&#162;	 -->
+    <p>This a one &cent; paragragh</p>
+    <!-- £	pound	&pound;	&#163;	 -->
+    <p>This a one &pound; paragragh</p>
+    <!-- ¥	yen	&yen;	&#165;	 -->
+    <p>This a one &yen; paragragh</p>
+    <!-- €	euro	&euro;	&#8364;	 -->
+    <p>This a one &euro; paragragh</p>
+    <!-- ©	copyright	&copy;	&#169;	 -->
+    <p>This a one &copy; paragragh</p>
+    <!-- ®	trademark	&reg;	&#174; -->
+    <p>This a one &reg; paragragh</p>
+  </div>
+</body>
+</html>

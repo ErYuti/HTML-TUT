@@ -1,0 +1,146 @@
+<!-- <input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Form Pracs</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- The <fieldset> element is used to group related data in a form. -->
+  <!-- The <legend> element defines a caption for the <fieldset> element. -->
+  <fieldset>
+    <legend>Personalia:</legend>
+  <!-- The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. -->
+  <label for="fname">First name:</label>
+  <!-- The <input> element can be displayed in several ways, depending on the type attribute. -->
+  <input type="text" id="fname" name="fname">
+  <!-- The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox. -->
+  <!-- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. -->
+  <br><label for="cars">Choose a car:</label>
+  <!-- The <select> element defines a drop-down list: -->
+  <select id="cars" name="cars" >
+    <!-- The <option> element defines an option that can be selected. -->
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <!-- The <textarea> element defines a multi-line input field (a text area): -->
+  <br> 
+  <textarea name="message" rows="10" cols="30">
+  The cat was playing in the garden.
+  </textarea>
+    <!-- The <datalist> element specifies a list of pre-defined options for an <input> element. -->
+    <br>Select
+    <input list="browsers"> 
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <!-- The <output> element represents the result of a calculation (like one performed by a script) -->
+    <br>Drag or select <input type="range"  id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  <!-- The <button> element defines a clickable button: -->
+  <br><button type="button" onclick="alert('Hello World!')">Click Me!</button>
+  </fieldset>
+  <form>
+    <fieldset>
+      <!-- <input type="text"> defines a single-line text input field: -->
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <!-- <input type="password"> defines a password field: -->
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd">
+      <!-- <input type="submit"> defines a button for submitting form data to a form-handler -->
+      <br><input type="submit" value="Submit">
+      <!-- <input type="reset"> defines a reset button that will reset all form values to their default values: -->
+      <br><input type="reset" value="Reset">
+      <!-- <input type="radio"> defines a radio button.
+      Radio buttons let a user select ONLY ONE of a limited number of choices: -->
+     <br> <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+      <!-- <input type="checkbox"> defines a checkbox.
+      Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+      <br><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> I have a boat</label>
+      <!-- <input type="button"> defines a button -->
+      <br><input type="button" onclick="alert('Hello World!')" value="Click Me!">
+      <!-- The <input type="color"> is used for input fields that should contain a color. -->
+     <br> <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor">
+      <!-- The <input type="date"> is used for input fields that should contain a date -->
+      <br><label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <!-- You can also use the min and max attributes to add restrictions to dates -->
+      <br><label for="datemax">Enter a date before 1980-01-01:</label>
+      <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      <label for="datemin">Enter a date after 2000-01-01:</label>
+      <input type="date" id="datemin" name="datemin" min="2000-01-02">
+      <!-- The <input type="datetime-local"> specifies a date and time input field, with no time zone. -->
+      <br><label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      <!-- The <input type="email"> is used for input fields that should contain an e-mail address. -->
+      <br><label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email">
+      <!-- The <input type="image"> defines an image as a submit button. -->
+      <br><input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+      <!-- The <input type="file"> defines a file-select field and a "Browse" button for file uploads. -->
+      <br><label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile">
+      <!-- The <input type="hidden"> defines a hidden input field (not visible to a user).
+      A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+      A hidden field often stores what database record that needs to be updated when the form is submitted. -->
+      <br><label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <input type="hidden" id="custId" name="custId" value="3487">
+      <input type="submit" value="Submit">
+      <!-- The <input type="month"> allows the user to select a month and year. -->
+      <br><label for="bdaymonth">Birthday (month and year):</label>
+      <input type="month" id="bdaymonth" name="bdaymonth">
+      <!-- The <input type="number"> defines a numeric input field. -->
+      <br><label for="quantity">Quantity (between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5">
+      <!-- The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes: -->
+      <br><label for="vol">Volume (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50">
+      <!-- The <input type="search"> is used for search fields (a search field behaves like a regular text field) -->
+      <br><label for="gsearch">Search Google:</label>
+      <input type="search" id="gsearch" name="gsearch">
+      <!-- The <input type="tel"> is used for input fields that should contain a telephone number. -->
+      <br><label for="phone">Enter your phone number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      <!-- The <input type="time"> allows the user to select a time (no time zone). -->
+      <br><label for="appt">Select a time:</label>
+      <input type="time" id="appt" name="appt">
+      <!-- The <input type="url"> is used for input fields that should contain a URL address. -->
+      <br><label for="homepage">Add your homepage:</label>
+      <input type="url" id="homepage" name="homepage">
+      <!-- The <input type="week"> allows the user to select a week and year. -->
+      <br><label for="week">Select a week:</label>
+      <input type="week" id="week" name="week">
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Semantic</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
+  In HTML there are some semantic elements that can be used to define different parts of a web page: -->
+  <!-- <article>	Defines independent, self-contained content -->
+  <!-- <aside>	Defines content aside from the page content -->
+  <aside>
+  <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </aside>
+  <!-- <details>	Defines additional details that the user can view or hide -->
+  <!-- <figcaption>	Defines a caption for a <figure> element -->
+  <!-- <figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. -->
+  <figure>
+    <img src="pic_trulli.jpg" alt="Trulli">
+    <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+  <!-- <footer>	Defines a footer for a document or section -->
+  <footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
+
+  <!-- <header>	Specifies a header for a document or section -->
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <!-- <main>	Specifies the main content of a document -->
+  <!-- <mark>	Defines marked/highlighted text -->
+  <!-- <nav>	Defines navigation links -->
+  <nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+  </nav>
+  <!-- <section>	Defines a section in a document -->
+  <!-- <summary>	Defines a visible heading for a <details> element -->
+  <!-- <time>	Defines a date/time -->
+</body>
+</html>

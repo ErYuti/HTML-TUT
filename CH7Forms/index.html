@@ -1,0 +1,57 @@
+<!-- HTML Forms -->
+<!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
+<!-- An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc. -->
+<!-- An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc. . -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Forms</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div>
+    <h1>Conatct Us Now</h1>
+    <!-- <form> It defines an HTML form to enter inputs by the used side. -->
+    <!-- action is used for backend files/action attribute defines the action to be performed when the form is submitted-->
+    <!-- input data submit and go to "form.php" means php handle the form file in backend -->
+    <!-- <form action="server url" method="get|post">  
+      //input controls e.g. textfield, textarea, radiobutton, button  
+    </form> -->
+    <form action="form.php">
+      <!-- the <fieldset> element in HTML is used to group the related information of a form. This element is used with <legend> element which provide caption for the grouped elements. -->
+      <fieldset>  
+      <!-- <input> element is fundamental form element. It is used to create form fields, to take input from user. We can apply different input filed to gather different information form user. Following is the example to show the simple text input -->
+      <!-- Enter your name  <br>  <input type="text" name="username">   -->
+      <!-- <input>	It defines an input control -->
+      First Name: <input type="text" placeholder="Firstname"/>
+      Last Name: <input type="text" placeholder="Lastname"/></br>
+      <!-- The <textarea> tag in HTML is used to insert multiple-line text in a form. -->
+      Address:<br>  
+      <textarea rows="2" cols="66" placeholder="Enter your address"></textarea> 
+      <!-- It is considered better to have label in form. As it makes the code parser/browser/user friendly. -->
+      <br><label for="email">Email: </label> 
+      <input type="email" id="email" name="email" /> <br/>  
+      <!-- The radio button is used to select one option from multiple options. It is used for selection of gender, quiz questions etc. -->
+      <label for="gender">Gender: </label>  
+      <input type="radio" id="gender" name="gender" value="male"/>Male  
+      <input type="radio" id="gender" name="gender" value="female"/>Female <br/> 
+      <!-- The checkbox control is used to check multiple options from given checkboxes. -->
+      Eduction<br>  
+      <input type="checkbox" id="10th" name="10th" value="10th"/>  
+         <label for="10th">10th</label> <br>  
+      <input type="checkbox" id="12th" name="12th" value="12th"/>  
+         <label for="12th">12th</label> <br>  
+      <input type="checkbox" id="Engg" name="Engg" value="Engg"/>  
+        <label for="Engg">Engg</label>  </br>
+      <!-- HTML <input type="submit"> are used to add a submit button on web page. When user clicks on submit button, then form get submit to the server. -->
+      <!-- <input type="submit" value="submit">  -->
+    <br> <input type="submit" value="submit">  
+        </fieldset>  
+    </form>
+  </div>
+</body>
+</html>

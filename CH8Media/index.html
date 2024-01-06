@@ -1,0 +1,77 @@
+<!-- Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Media</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- HTML Video <video> element is used to show a video on a web page. -->
+  <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  <!-- To start a video automatically, use the autoplay attribute: -->
+  <video width="320" height="240" autoplay>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  <!-- Add muted after autoplay to let your video start playing automatically (but muted): -->
+  <video width="320" height="240" autoplay muted>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+
+
+  <!-- To play an audio file in HTML, use the <audio> element: -->
+  <audio controls autoplay muted>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+  <!-- HTML YouTube Videos -->
+  <!-- Upload the video to YouTube
+  Take a note of the video id
+  Define an <iframe> element in your web page
+  Let the src attribute point to the video URL
+  Use the width and height attributes to specify the dimension of the player
+  Add any other parameters to the URL (see below) -->
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY">
+  </iframe>
+  <!-- You can let your video start playing automatically when a user visits the page, by adding autoplay=1 to the YouTube URL. However, automatically starting a video is annoying for your visitors! -->
+  <!-- Add mute=1 after autoplay=1 to let your video start playing automatically (but muted). -->
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+  </iframe>
+  <!-- A comma separated list of videos to play (in addition to the original URL). -->
+  <!-- Add loop=1 to let your video loop forever. -->
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+  </iframe>
+  <!-- Add controls=0 to not display controls in the video player. -->
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+  </iframe>
+
+  <!-- HTML plugin -->
+  <!-- Plug-ins are computer programs that extend the standard functionality of the browser. -->
+  <!-- To run Java applets
+  To run Microsoft ActiveX controls
+  To display Flash movies
+  To display maps
+  To scan for viruses
+  To verify a bank id -->
+  <!-- The <object> element is supported by all browsers. -->
+  <object width="100%" height="500px" data="snippet.html"></object>
+  <!-- The <embed> element is supported in all major browsers. -->
+  <embed src="audi.jpeg">
+</body>
+</html>
